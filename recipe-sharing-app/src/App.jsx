@@ -1,5 +1,18 @@
 import React from 'react';
 import RecipeList from './components/RecipeList';
+import { Link } from 'react-router-dom';
+
+const App = () => {
+  return (
+    <div>
+      <h1>Recipe Sharing App</h1>
+      <RecipeList />
+    </div>
+  );
+};
+
+import React from 'react';
+import RecipeList from './components/RecipeList';
 import AddRecipeForm from './components/AddRecipeForm';
 
 const App = () => {

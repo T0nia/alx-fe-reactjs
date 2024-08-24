@@ -1,6 +1,33 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import RecipeList from './components/RecipeList';
-import { Link } from 'react-router-dom';
+import RecipeDetails from './components/RecipeDetails';
+import AddRecipeForm from './components/AddRecipeForm';
+
+const App = () => {
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/add-recipe">Add Recipe</Link>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<RecipeList />} />
+          <Route path="/recipe/:recipeId" element={<RecipeDetails />} />
+          <Route path="/add-recipe" element={<AddRecipeForm />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+};
+
 
 
 const App = () => {

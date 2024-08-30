@@ -4,6 +4,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 <Route path="profile" element={<ProtectedRoute element={<Profile />} />}>
   <Route path="details" element={<ProfileDetails />} />
   <Route path="settings" element={<ProfileSettings />} />
+  <Route path="blog/:id" element={<BlogPost />} />  {/* Dynamic Route */}
 </Route>
 ///
 import React from 'react';
@@ -14,6 +15,7 @@ import ProfileDetails from './components/ProfileDetails';
 import ProfileSettings from './components/ProfileSettings';
 import Post from './components/Post';
 import NotFound from './components/NotFound';
+import BlogPost from './components/BlogPost';  
 
 function App() {
   return (

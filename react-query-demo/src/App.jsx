@@ -1,5 +1,5 @@
 import React from 'react';
-import PostsComponent from './PostsComponent';
+import PostsComponent from './components/PostsComponent';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
 //
 import React from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import PostsComponent from './PostsComponent';
+import PostsComponent from './components/PostsComponent';
 
 // Create a new QueryClient instance
 const queryClient = new QueryClient();

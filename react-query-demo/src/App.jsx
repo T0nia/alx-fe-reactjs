@@ -9,6 +9,25 @@ function App() {
     </div>
   );
 }
+//
+import React from 'react';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import PostsComponent from './PostsComponent';
+
+// Create a new QueryClient instance
+const queryClient = new QueryClient();
+
+function App() {
+  return (
+    // Provide the QueryClient instance to the application
+    <QueryClientProvider client={queryClient}>
+      <div className="App">
+        <h1>Posts</h1>
+        <PostsComponent />
+      </div>
+    </QueryClientProvider>
+  );
+}
 
 //
 import { useState } from 'react'

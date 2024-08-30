@@ -1,3 +1,14 @@
+import React from 'react';
+import TodoList from './components/TodoList';  // Import TodoList component
+
+function App() {
+  return (
+    <div>
+      <TodoList />  {/* Render TodoList component */}
+    </div>
+  );
+}
+
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'

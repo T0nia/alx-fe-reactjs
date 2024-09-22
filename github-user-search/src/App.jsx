@@ -1,5 +1,4 @@
-import React from 'react';
-src/components, src/services - 
+import React from 'react'
 function App() {
   return (
     <div className='container mx-auto'>
